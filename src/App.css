@@ -1,0 +1,72 @@
+#root {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.search-bar{
+  width: 200px;
+  height: 25px;
+  font-size: 16px;
+  border: 1px solid white;
+  border-radius: 5px;
+  background-color: rgb(44, 48, 59, 1);
+  color: white;
+}
+
+.main-content{
+  display: flex;
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.content{
+  width: 80%;
+}
+
+@media (max-width: 480px) {
+  .header{
+    display: block;
+  }
+
+  .header h1{
+    font-size: 30px;
+  }
+
+  .aside{
+    width: 90%;
+    height: 40%;
+  }
+
+  .task-content form{
+    display: block;
+    justify-content: center;
+  }
+
+  .tasks-list{
+    height: 100%;
+  }
+
+  .task{
+    display: block;
+  }
+
+  .main-content{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .content{
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .task{
+    width: 100%;
+  }
+
+  .tasks-list{
+    display: grid;
+    place-content: center;
+  }
+}
